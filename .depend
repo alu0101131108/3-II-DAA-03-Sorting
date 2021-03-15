@@ -1,0 +1,20 @@
+main.o: main.cpp framework/Framework.h framework/Problema.h \
+ framework/Solucion.h examples/MergeSortP.h \
+ examples/../framework/Problema.h examples/MergeSortS.h \
+ examples/../framework/Solucion.h examples/MergeSortS.h \
+ examples/QuickSortP.h examples/QuickSortS.h examples/QuickSortS.h
+Framework.o: framework/Framework.cpp framework/Framework.h \
+ framework/Problema.h framework/Solucion.h
+Problema.o: framework/Problema.cpp framework/Problema.h \
+ framework/Solucion.h
+Solucion.o: framework/Solucion.cpp framework/Solucion.h
+MergeSortP.o: examples/MergeSortP.cpp examples/MergeSortP.h \
+ examples/../framework/Problema.h examples/../framework/Solucion.h \
+ examples/MergeSortS.h examples/../framework/Solucion.h
+MergeSortS.o: examples/MergeSortS.cpp examples/MergeSortS.h \
+ examples/../framework/Solucion.h
+QuickSortP.o: examples/QuickSortP.cpp examples/QuickSortP.h \
+ examples/../framework/Problema.h examples/../framework/Solucion.h \
+ examples/QuickSortS.h examples/../framework/Solucion.h
+QuickSortS.o: examples/QuickSortS.cpp examples/QuickSortS.h \
+ examples/../framework/Solucion.h
